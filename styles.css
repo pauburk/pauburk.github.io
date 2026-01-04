@@ -39,7 +39,8 @@ a {
 }
 
 .text p {
-    font-size: 1.4em;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.25em;
     text-align: justify;
     text-align-last: center;
 }
@@ -53,7 +54,7 @@ a {
     width: 100%;
 }
 
-.caption {
+.text .caption, .caption {
     margin-top: 0;
     font-size: 1.4em;
     text-align: center;
@@ -62,6 +63,10 @@ a {
 
 .mono {
     font-family: monospace;
+}
+
+span[style*="font-family: monospace"] {
+    font-size: 1.2em;
 }
 
 @media screen and (max-width: 1347px) {
@@ -173,6 +178,7 @@ HOMEPAGE - GALLERY
 
 .row.reverse .desc-box {
     text-align: right;
+    justify-content: flex-end;
 }
 
 .media {
